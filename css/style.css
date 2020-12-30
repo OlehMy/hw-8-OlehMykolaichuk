@@ -503,7 +503,7 @@ body {
   border: none;
   appearance: none;
   border-radius: 0.8rem;
-  background: url(../../img/right-box/input-arrow.png) no-repeat 85%;
+  background: url(../img/right-box/input-arrow.png) no-repeat 85%;
   background-color: #F5F5F7;
   height: 3.5rem;
   font-family: 'Roboto';
