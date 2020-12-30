@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.premium-suggestion {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-grow: 1;
+   background-color: @gray;
+   border-radius: 1.4rem;
+   margin-top: 3rem;
+}
+
+.premium-suggestion__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-basis: 40%;
+}
+
+.premium-suggestion__text-title {
+   font-family: 'Baloo Bhai 2';
+   font-size: 2.4rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 3.8rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.premium-suggestion__text-date {
+   font-family: 'Roboto';
+   font-size: 1.6rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.4rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.premium-suggestion__text-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;   
+   font-family: Roboto;
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem;
+   letter-spacing: 0em;
+   color: @white;
+   width: 12rem;
+   height: 4rem;
+   background-color: @black;
+   border-radius: 0.8rem;
+   margin-top: 2rem;
+
+   transition: background-color .2s linear, border .1s linear, color .2s linear;
+
+   &:hover {
+      background-color: @white;
+      border: 2px solid @black;
+      color: @black;
+   }
+}

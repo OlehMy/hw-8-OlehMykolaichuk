@@ -1,0 +1,122 @@
+// main: ../style.less
+
+.subject-block {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-grow: 1;
+   background-color: @gray;
+   border-radius: 1.4rem;
+}
+
+.subject-block__square {
+   display: flex;
+   width: 5.8rem;
+   height: 5.8rem;   
+   border-radius: 1.2rem;
+   margin: 0.8rem 0 0.8rem 0.8rem;   
+}
+.figma {
+   background: url(../img/center-box/figma.png) no-repeat center;
+   background-color: @white;
+}
+.analog-photo {
+   background: url(../img/center-box/analog-photo.png) no-repeat center;
+   background-color: @white;
+}
+.instagram {
+   background: url(../img/center-box/instagram.png) no-repeat center;
+   background-color: @white;
+}
+.drawing {
+   background: url(../img/center-box/drawing.png) no-repeat center;
+   background-color: @white;
+}
+.ps {
+   background: url(../img/center-box/ps.png) no-repeat center;
+   background-color: @white;
+}
+
+.subject-block__text {
+   margin-left: 1rem;
+   flex-basis: 26%;
+}
+
+.subject-block__text-title {
+   font-family: 'Baloo Bhai 2';
+   font-size: 1.6rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.6rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.subject-block__text-date {
+   font-family: 'Roboto';
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.subject-block__duration {
+   display: flex;
+   column-gap: 0.8rem;
+   font-family: 'Roboto';
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   letter-spacing: 0em;
+   text-align: center;
+   padding-right: 0.8rem;
+}
+
+.subject-block__duration-img {
+   width: 1.6rem;
+   height: 1.6rem;
+}
+
+.subject-block__rating {
+   display: flex;
+   column-gap: 0.8rem;
+   font-family: 'Roboto';
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   letter-spacing: 0em;
+   text-align: center;
+   padding-right: 0.8rem;
+}
+
+.subject-block__button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;   
+   font-family: Roboto;
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem;
+   letter-spacing: 0em;
+   color: @white;
+   width: 12rem;
+   height: 4rem;
+   background-color: @black;
+   border-radius: 0.8rem;
+   margin-right: 2rem;
+
+   transition: background-color .2s linear, border .1s linear, color .2s linear;
+
+   &:hover {
+      background-color: @white;
+      border: 2px solid @black;
+      color: @black;
+   }
+}

@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.sidebar {
+   flex-basis: 10%;
+   background-color: @black;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   row-gap: 10rem;
+   border-radius: 2.4rem;
+   padding: 4rem 0;
+   max-width: 13rem;
+   min-width: 5.5rem;
+   flex-grow: 1;
+}
+
+.sidebar__logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sidebar__nav {
+   display: flex;
+   flex-direction: column;   
+   align-items: center;
+   justify-content: flex-start;   
+   row-gap: 5rem;
+   flex-grow: 1;
+}
+
+.sidebar__nav-link {
+   text-decoration: none;
+
+   &:last-child {
+      margin-top: auto;
+   }
+}

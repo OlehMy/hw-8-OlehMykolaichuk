@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.user-statistics {
+   display: flex;
+   flex-direction: column;
+   margin-top: 3rem;
+}
+
+.user-statistics__caption {
+   font-family: 'Baloo Bhai 2';
+   font-size: 2.4rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 3.8rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.user-statistics__nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   column-gap: 3rem;
+}
+
+.user-statistics__nav-link {
+   text-decoration: none;
+   font-family: 'Baloo Bhai 2';
+   font-size: 1.6rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.6rem;
+   letter-spacing: 0em;
+   text-align: left;
+   color: fade(@black, 30%);
+
+   &:first-child {
+      color: @black;
+   }
+}
+
+.user-statistics__select-service {
+   margin-left: auto;
+   border: none;
+   appearance: none; 
+   border-radius: 0.8rem;
+   background: url(../../img/right-box/input-arrow.png) no-repeat 85%;
+   background-color: @gray;
+   height: 3.5rem;
+   font-family: 'Roboto';
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.4rem;
+   letter-spacing: 0em;
+   text-align: left;
+   padding: 0 2rem;
+   width: 9rem;
+}
+
+.user-statistics__select-option {
+   font-family: 'Roboto';
+   font-size: 1.3rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.4rem;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+.user-statistics__graph {
+   margin-top: 3rem;
+}
