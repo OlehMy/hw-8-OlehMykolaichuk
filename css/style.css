@@ -78,6 +78,12 @@ body {
 }
 .sidebar__nav-link {
   text-decoration: none;
+  transition: transform 0.2s linear;
+}
+.sidebar__nav-link:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .sidebar__nav-link:last-child {
   margin-top: auto;
@@ -417,6 +423,18 @@ body {
   border-radius: 50%;
   color: #FFFFFF;
   text-align: center;
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+@-webkit-keyframes blink {
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
+}
+@keyframes blink {
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
 }
 .user-use__avatar {
   display: flex;
@@ -527,6 +545,7 @@ body {
 }
 .user-statistics__graph {
   margin-top: 3rem;
+  width: 100%;
 }
 .premium-suggestion {
   display: flex;
