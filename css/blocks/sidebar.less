@@ -33,6 +33,14 @@
 .sidebar__nav-link {
    text-decoration: none;
 
+   transition: transform .2s linear;
+
+   &:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+   }
+
    &:last-child {
       margin-top: auto;
    }
