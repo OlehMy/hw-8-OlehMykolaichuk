@@ -37,7 +37,22 @@
    height: 1.3rem;
    border-radius: 50%;
    color: @white;
-   text-align: center;    
+   text-align: center;
+   
+   -webkit-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+
+    @-webkit-keyframes blink {
+      100% {
+          color: rgba(34, 34, 34, 0);
+      }
+  }
+  
+  @keyframes blink {
+      100% {
+          color: rgba(34, 34, 34, 0);
+      }
+  }
 }
 
 .user-use__avatar {
